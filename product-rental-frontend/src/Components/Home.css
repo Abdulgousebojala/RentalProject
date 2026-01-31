@@ -1,0 +1,57 @@
+.home-page {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(to right, #212425, #f1f8e9);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.home-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../ProductRental.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.overlay {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: rgb(241, 146, 146);
+}
+
+
+.overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #241b1b;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.overlay p {
+    font-size: 1.5rem;
+    color: #1f2022;
+    margin-bottom: 20px;
+}
+
+.home-logo {
+    width: 300px;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
